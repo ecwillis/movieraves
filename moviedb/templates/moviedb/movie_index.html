@@ -1,0 +1,9 @@
+{% if all_movies %}
+  <ul>
+    {% for movie in all_movies %}
+      <li><a href="/movie/#">{{ movie.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>Thug Life - no movies.</p>
+{% endif %}
